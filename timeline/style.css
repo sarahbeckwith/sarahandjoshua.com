@@ -29,25 +29,6 @@
 	max-height: calc(100% - 90px);
 }
 
-.artifact .contents > * {
-	opacity: 0.8;
-	filter: blur(2px);
-	transition: all 0.5s;
-}
-
-.artifact.active .contents > * {
-	opacity: 1;
-	filter: blur(0px);
-}
-
-.artifact .contents > .darkbox {
-	transform: scale(1.1);
-}
-
-.artifact.active .contents > .darkbox {
-	transform: scale(1);
-}
-
 .darkbox {
 	width: 100%;
 	background: #222;
@@ -68,8 +49,8 @@
 
 .artifact .caption {
 	border-top: 1px solid #eee;
-    background: #fff;
-    font-family: sans-serif;
+	background: #fff;
+	font-family: sans-serif;
 	padding: 15px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;

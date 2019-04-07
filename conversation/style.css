@@ -1,7 +1,7 @@
 .message {
 	background-size: 30px 30px, 28px 28px;
 	background-repeat: no-repeat;
-	padding: 7px;
+	padding: 2px;
     padding-left: 45px;
     padding-right: 45px;
 }
@@ -50,5 +50,5 @@
     font-size: 11px;
     text-align: center;
     font-weight: 400;
-    margin-bottom: 5px;
+    margin: 5px;
 }
