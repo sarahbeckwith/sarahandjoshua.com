@@ -5,4 +5,5 @@ html {
     	), 
     	url(res/noise.png);
     background-size: 300px;
+  	-webkit-overflow-scrolling: touch;
 }
