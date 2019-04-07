@@ -1,0 +1,60 @@
+.artifact {
+    background: #fff;
+	border-radius: 5px;
+	margin-top: 10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.5s;
+	user-select: none;
+	cursor: pointer;
+}
+
+.artifact.active {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.artifact .contents {
+	transition: max-height 0.5s;
+	padding: 10px;
+	max-height: 200px;
+	overflow: hidden;
+	opacity: 0.5;
+}
+
+.darkbox {
+	width: 100%;
+	background: #333;
+	display: flex; 
+	justify-content: center;
+}
+
+.darkbox img {
+	width: 100%;
+}
+
+.artifact.active .contents .darkbox img {
+	background: #333;
+	width: auto;
+	height: 100%;
+}
+
+.artifact .caption {
+	border-top: 1px solid #eee;
+    background: #fff;
+    font-family: sans-serif;
+	padding: 15px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.artifact.active .contents {
+	overflow-y: scroll;
+	opacity: 1;
+}
+
+.artifact.active .contents {
+	overflow-y: auto;
+	max-height: calc(100% - 90px);
+	opacity: 1;
+}
