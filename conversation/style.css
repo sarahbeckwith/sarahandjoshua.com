@@ -1,19 +1,21 @@
 .message {
-	background-size: 30px 30px;
+	background-size: 30px 30px, 28px 28px;
 	background-repeat: no-repeat;
 	padding: 7px;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 .message.sent {
-	background-image: url(res/curl_sent.svg);
-	background-position: bottom right;
+	background-image: url(res/curl_sent.svg), url(res/icon_joshua_circle.png);
+	background-position: calc(100% - 38px) 100%, calc(100% - 10px) calc(100% - 8px);
 	display: flex; 
 	justify-content: flex-end;
 }
 
 .message.recieved {
-	background-image: url(res/curl_recieved.svg);
-	background-position: bottom left;
+	background-image: url(res/curl_recieved.svg), url(res/icon_sarah_circle.png);
+	background-position: 38px 100%, 10px calc(100% - 8px);
 }
 
 .message .text {

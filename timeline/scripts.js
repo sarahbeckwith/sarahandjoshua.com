@@ -12,11 +12,11 @@ function handleArtifactClick(event) {
     	artifacts[i].classList.remove("active");
     }
 
-    console.log("scrolled");
+    var scrollSettings = {top: artifact.offsetTop - 10, behavior: "smooth"};
+    window.scrollTo(scrollSettings);
     artifact.classList.add("active");
     setTimeout(function() {
-    	// artifact.scrollIntoView({behavior: 'smooth'});
-    	window.scrollTo({top: artifact.offsetTop - 10, behavior: "smooth"});
+    	window.scrollTo(scrollSettings);
     }, 500);
 }
 

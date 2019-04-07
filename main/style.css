@@ -1,7 +1,7 @@
 html {
     background: linear-gradient(
-    		rgba(200, 200, 200, 0.96), 
-    		rgba(141, 154, 165, 0.96)
+    		rgba(245, 245, 245, 0.96), 
+    		rgba(245, 245, 245, 0.96)
     	), 
     	url(res/noise.png);
     background-size: 300px;
