@@ -34,6 +34,8 @@
 	background: #222;
 	display: flex; 
 	justify-content: center;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
 }
 
 .darkbox img {
