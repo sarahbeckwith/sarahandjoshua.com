@@ -12,11 +12,10 @@ function handleArtifactClick(event) {
     	artifacts[i].classList.remove("active");
     }
 
-    var scrollSettings = {top: artifact.offsetTop - 10, behavior: "smooth"};
-    window.scrollTo(scrollSettings);
+    window.scrollTo({top: artifact.offsetTop - 10, behavior: "smooth"});
     artifact.classList.add("active");
     setTimeout(function() {
-    	window.scrollTo(scrollSettings);
+    	window.scrollTo({top: artifact.offsetTop - 10, behavior: "smooth"});
     }, 500);
 }
 
