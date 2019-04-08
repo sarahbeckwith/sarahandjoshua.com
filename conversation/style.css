@@ -1,7 +1,7 @@
 .message {
 	background-size: 30px 30px, 28px 28px;
 	background-repeat: no-repeat;
-	padding: 2px;
+	padding-bottom: 7px;
     padding-left: 45px;
     padding-right: 45px;
 }
