@@ -21,8 +21,8 @@
 .message.sent:before {
     display: block;
     font-family: sans-serif;
-    font-size: 10px;
-    color: #777;
+    font-size: 11px;
+    color: #888;
     margin-bottom: 2px;
 }
 
