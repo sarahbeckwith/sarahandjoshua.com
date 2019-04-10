@@ -9,13 +9,31 @@
 .message.sent {
 	background-image: url(res/curl_sent.svg), url(res/icon_joshua_circle.png);
 	background-position: calc(100% - 38px) 100%, calc(100% - 10px) calc(100% - 8px);
-	display: flex; 
-	justify-content: flex-end;
+    text-align: right;
 }
 
 .message.recieved {
 	background-image: url(res/curl_recieved.svg), url(res/icon_sarah_circle.png);
 	background-position: 38px 100%, 10px calc(100% - 8px);
+}
+
+.message.recieved:before,
+.message.sent:before {
+    display: block;
+    font-family: sans-serif;
+    font-size: 10px;
+    color: #777;
+    margin-bottom: 2px;
+}
+
+.message.recieved:before {
+    content: "Sarah";
+    margin-left: 10px;
+}
+
+.message.sent:before {
+    content: "Joshua";
+    margin-right: 10px;
 }
 
 .message .text {
