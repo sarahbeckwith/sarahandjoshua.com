@@ -30,18 +30,18 @@ a:hover {
     box-sizing: border-box;
 }
 
-#home_page {
+#rsvp_page {
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
 }
 
-#home_page iframe {
+#rsvp_page iframe {
   border: none;
   flex-shrink: none;
 }
 
-#home_page {
+#rsvp_page {
     font-family: Hiatus;
     font-size: 80px;
 }
@@ -72,13 +72,15 @@ a:hover {
 .nav_item {
     color: #888;
     font-size: 16px;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
     display: inline-block;
+    transition: 0.5s;
+    border-radius: 16px;
 }
 .nav_item:hover, .nav_item a:hover {
-    color: #c9dde8;
-    transition: 0.5s;
+    color: #000;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .nav_item a {

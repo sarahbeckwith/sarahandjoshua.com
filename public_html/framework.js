@@ -10,7 +10,7 @@ function setup() {
         if (!nav_items.hasOwnProperty(i)) continue;
         nav_items[i].addEventListener("click", function(e) {
             if (e.target.parentNode.tagName.toLowerCase() != "a") {
-                open_page(e.target.innerHTML + "_page");
+                jsh.pages[e.target.innerHTML].open();
             }
             move_mobile_tray(true);
         });
@@ -64,5 +64,18 @@ function setup() {
         nav.style.transition = "none";
         content.style.transition = "none";
     });
+
+    if (location.href.indexOf('#') == -1) {
+        jsh.pages.rsvp.open();
+    }
+
 }
 
+function move_mobile_tray(close) {
+    var nav = jsh.get("#nav");
+    if (nav.classList.contains("show_nav")) {
+        nav.classList.remove("show_nav");
+    } else if (!close) {
+        nav.classList.add("show_nav");
+    }
+}
