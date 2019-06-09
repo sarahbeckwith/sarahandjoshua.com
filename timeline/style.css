@@ -1,6 +1,26 @@
+.section > .contents {
+	padding: 10px;
+	transition: all 0.5s;
+	overflow: hidden;
+	max-height: 10000000px;
+}
+
+.section > .contents:not(.expanded) {
+	max-height: 0;
+	opacity: 0;
+}
+
+.section > .title {
+	cursor: pointer;
+	padding: 15px;
+	background: #fff;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
+}
+
 .artifact {
     background: #888;
 	border-radius: 5px;
+	overflow: hidden;
 	margin-top: 10px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	transition: all 0.5s;
@@ -14,7 +34,7 @@
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.artifact .contents {
+.artifact > .contents {
 	background: #fff;
 	transition: all 0.5s;
 	max-height: 100px;
@@ -23,7 +43,7 @@
 	border-top-right-radius: 5px;
 }
 
-.artifact.active .contents {
+.artifact.active > .contents {
 	overflow-y: scroll;
 	overflow-y: auto;
 	max-height: calc(100% - 90px);
@@ -34,8 +54,6 @@
 	background: #222;
 	display: flex; 
 	justify-content: center;
-	border-top-left-radius: inherit;
-	border-top-right-radius: inherit;
 }
 
 .darkbox img {
@@ -49,11 +67,25 @@
 	margin: auto;
 }
 
-.artifact .caption {
-	border-top: 1px solid #eee;
+.artifact > .caption {
 	background: #fff;
-	font-family: sans-serif;
 	padding: 15px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+}
+
+.artifact > .caption > .title {
+	font-weight: 800; 
+}
+
+.artifact > .caption > .date {
+    font-size: 11px;
+}
+
+.artifact > .caption > .details {
+    font-size: 11px;
+    margin-top: 5px;
+    color: #999;
+}
+
+.artifact > *:not(:first-child) {
+	border-top: 1px solid #eee;
 }

@@ -6,4 +6,9 @@ html {
     	url(res/noise.png);
     background-size: 300px;
   	-webkit-overflow-scrolling: touch;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
 }

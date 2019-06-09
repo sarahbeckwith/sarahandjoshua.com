@@ -19,9 +19,20 @@ function handleArtifactClick(event) {
     }, 500);
 }
 
+function handleSectionTitleClick(event) {
+    var sectionTitle = event.target;
+    var contents = sectionTitle.parentNode.querySelector(".contents");
+    contents.classList.toggle("expanded");
+}
+
 window.addEventListener("DOMContentLoaded", function() {
     var artifacts = document.getElementsByClassName("artifact");
     for (var i = 0; i < artifacts.length; i++) {
     	artifacts[i].addEventListener("click", handleArtifactClick);
+    }
+
+    var sections = document.querySelectorAll(".section > .title");
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].addEventListener("click", handleSectionTitleClick);
     }
 });
