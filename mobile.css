@@ -1,0 +1,87 @@
+#mobile_contact_image {
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url(../media/joshua_diaddigo_contact.jpg);
+    background-size: cover;
+    border: 2px solid #7eb0ca;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#mobile_nav_button {
+    height: 40px;
+    width: 40px;
+    background: url(./images/mobile_toggle_light.png) no-repeat center;
+    background-size: 70%;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    left: -40px;
+    transition: left 0.5s;
+}
+
+#content {
+    transition: transform 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+    #mobile_nav_button {
+        display: block;
+    }
+
+    .nav_item {
+        display: block;
+        padding: 10px 10px 10px 20px;
+        border-radius: 0;
+    }
+
+    .nav_item:hover {
+        padding-left: 30px;
+    }
+
+    a .nav_item {
+        border-color: #ddd;
+    }
+
+    .nav_item:hover {
+        background: #ddd;
+    }
+
+    #right_aligned_buttons {
+        float: none;
+        display: block;
+        border-top: 1px solid #ddd;
+    }
+
+    #nav {
+        height: 100%;
+        border-left: 1px solid #7eb0ca;
+        box-sizing: border-box;
+        right: -200px;
+        max-width: 200px;
+        padding: 0;
+        background: #eee;
+    }
+
+    #nav_inner {
+        height: 100%;
+        background: #eee;
+    }
+
+    .show_nav {
+        transform: translateX(-100%);
+    }
+
+    .show_nav #mobile_nav_button {
+        left: 0;
+        top: 0;
+    }
+
+    .show_nav + #content {
+        transform: translateX(-200px);
+    }
+}
