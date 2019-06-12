@@ -1,8 +1,0 @@
-@font-face {font-family: "Hiatus";
-    src: url("./hiatus/IE9.eot"); /* IE9*/
-    src: url("./hiatus/embedded-opentype.eot") format("embedded-opentype"), /* IE6-IE8 */
-    url("./hiatus/woff2.woff2") format("woff2"), /* chrome firefox */
-    url("./hiatus/woff.woff") format("woff"), /* chrome firefox */
-    url("./hiatus/truetype.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    url("./hiatus/ios.svg") format("svg"); /* iOS 4.1- */
-}
