@@ -1,1 +1,4 @@
 DirectoryIndex site.html
+
+Redirect /registry https://sarahplusjoshua.com/#registry
+Redirect /registry/ https://sarahplusjoshua.com/#registry

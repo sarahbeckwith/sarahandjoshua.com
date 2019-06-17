@@ -30,7 +30,7 @@ a:hover {
     box-sizing: border-box;
 }
 
-#rsvp_page {
+#rsvp_page, #registry_page {
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
@@ -41,7 +41,7 @@ a:hover {
   flex-shrink: none;
 }
 
-#rsvp_page {
+.title_text {
     font-family: Hiatus;
     font-size: 80px;
 }
